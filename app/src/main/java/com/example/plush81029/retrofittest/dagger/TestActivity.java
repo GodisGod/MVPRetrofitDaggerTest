@@ -19,8 +19,6 @@ public class TestActivity extends AppCompatActivity implements UploadView {
     @Inject
     Presenter mPresenter;
 
-//    PluNet mPluNet;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +39,7 @@ public class TestActivity extends AppCompatActivity implements UploadView {
     }
 
     private void initEvent() {
+        //不使用dagger的时候需要new 新的对象
 //        mPluNet = new PluNet();
 //        mPresenter = new Presenter(mPluNet, this);
         findViewById(R.id.btn_start).setOnClickListener(new View.OnClickListener() {

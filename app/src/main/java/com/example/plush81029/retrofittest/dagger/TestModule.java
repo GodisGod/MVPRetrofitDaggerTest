@@ -11,11 +11,9 @@ import dagger.Provides;
 @Module
 public class TestModule {
 
-    private PluNet mPluNet;
     private UploadView mUploadView;
 
-    public TestModule(PluNet pluNet, UploadView uploadView) {
-        mPluNet = pluNet;
+    public TestModule(UploadView uploadView) {
         mUploadView = uploadView;
     }
 
@@ -26,7 +24,7 @@ public class TestModule {
 
     @Provides
     PluNet providePluNet(){
-        return mPluNet;
+        return new PluNet();
     }
 
 }

@@ -88,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 param.signature = "1OIehbaryYPanx8sOBBGQudbQaxzZWNyZXRJZD1BS0lER09IelhyUXRmRmdybVJheHB4cld3NzJqQlBQRnA3QTQmY3VycmVudFRpbWVTdGFtcD0xNTAxMTM5Mzc0JmV4cGlyZVRpbWU9MTUwMTIzOTM3NCZyYW5kb209MTA";
                 param.videoPath = "/mnt/shared/Other/V_-1207322832_.mp4";
                 param.coverPath = "/mnt/shared/Image/3bcc013b4fad97ea3b908c62e9d09567_d788d43f8794a4c22fe6ab9408f41bd5ac6e3943.jpg";
+                param.secretId = "AKIDGOHzXrQtfFgrmRaxpxrWw72jBPPFp7A4";
                 mTXUGCPublish.publishVideo(param);
                 tvTime.setText(param.videoPath + "\n" + param.coverPath);
             }

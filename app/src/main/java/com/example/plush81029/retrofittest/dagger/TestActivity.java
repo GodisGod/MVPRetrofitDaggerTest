@@ -25,7 +25,7 @@ public class TestActivity extends AppCompatActivity implements UploadView {
         setContentView(R.layout.activity_dagger2_test);
 
         DaggerComponent.builder()
-                .testModule(new TestModule(new PluNet(), this))
+                .testModule(new TestModule(this))
                 .build()
                 .inject(this);
 

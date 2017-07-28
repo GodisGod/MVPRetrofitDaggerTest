@@ -34,7 +34,6 @@ android {
         })
         compile files('libs/cos-sdk-android.1.4.3.6.jar')
         compile files('libs/sha1utils.jar')
-        compile files('libs/txrtmpsdk.jar')
         compile files('libs/ugcupload.jar')
         compile 'com.android.support:appcompat-v7:26.+'
         compile 'com.android.support.constraint:constraint-layout:1.0.2'
@@ -48,3 +47,6 @@ android {
     }
 }
 
+dependencies {
+    compile files('libs/txrtmpsdk.jar')
+}

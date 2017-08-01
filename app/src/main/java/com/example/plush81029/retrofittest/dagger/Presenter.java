@@ -19,12 +19,12 @@ import retrofit2.Response;
 
 public class Presenter {
 
-    private PluNet mPluNet;
+    @Inject
+    PluNet mPluNet;
     private UploadView mUploadView;
 
     @Inject
-    public Presenter(PluNet pluNet, UploadView uploadView) {
-        mPluNet = pluNet;
+    public Presenter(UploadView uploadView) {
         mUploadView = uploadView;
     }
 

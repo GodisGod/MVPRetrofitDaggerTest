@@ -1,5 +1,7 @@
 package com.example.plush81029.retrofittest;
 
+import javax.inject.Inject;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Retrofit;
@@ -9,6 +11,10 @@ import retrofit2.Retrofit;
  */
 
 public class PluNet implements PluInterface, PluInterface.ActionInterface {
+
+    @Inject
+    public PluNet() {
+    }
 
     @Override
     public Call<String> uploadVideo(Callback callback) {

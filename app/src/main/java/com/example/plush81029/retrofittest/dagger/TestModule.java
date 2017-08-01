@@ -22,9 +22,4 @@ public class TestModule {
         return mUploadView;
     }
 
-    @Provides
-    PluNet providePluNet(){
-        return new PluNet();
-    }
-
 }

@@ -21,6 +21,7 @@ public class Presenter {
 
     @Inject
     PluNet mPluNet;
+
     private UploadView mUploadView;
 
     @Inject
